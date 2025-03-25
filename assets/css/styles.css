@@ -25,48 +25,68 @@ header{
 
 header h1{
     font-weight: 700;
-    font-size: 46px;
+    font-size: 7vmin;
     color: white;
     text-decoration:underline;
 }
 
 header h2{
     font-weight: 700;
-    font-size: 32px;
+    font-size: 5vmin;
     color: white;
 }
 
 ol{
     width: 100%;
+    min-height: 120vmin;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
 }
 
 ol li{
-    width: 50%;
+    font-size: 4vmin;
+    display: flex;
+    flex-direction: column;
+    min-width: 30%;
     text-align: center;
     list-style: none;
-    padding: 10px 10px;
-    border: 2px solid wheat;
     color: white;
-    border-radius: 10px;
     margin: 10px
 }
 
 ol li img{
-    max-width: 100%;
+    border: 5px solid wheat;
+    max-height: 60vmin;
+    border-radius: 10px 10px;
+    margin: 1vmin;
 }
 
 button{
     max-width: 30%;
     background-color: mediumaquamarine;
     color: black;
+    font-size: 3vmin;
     font-weight: bold;
+    border: 2px solid black;
     border-radius: 20px;
     padding: 10px 10px; 
+    margin-bottom: 3vmin;
 }
 
 button:hover{
     cursor: pointer;
+}
+
+@media(max-width: 1000px){
+    ol{
+        flex-direction: column;
+    }
+
+    ol li{
+        width: 100%;
+    }
+
+    ol li img{
+        max-height:max-content;
+    }
 }
