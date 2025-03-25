@@ -8,14 +8,65 @@
 
 body{
     background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(69,155,252,1) 32%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(69,155,252,1) 20%, rgba(255,0,0,1) 100%);
 }
 .container{
     width: 80%;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin: 0 auto;
 }
+
 header{
+    margin: 20px    ;
     text-align: center;
-    color:white
+}
+
+header h1{
+    font-weight: 700;
+    font-size: 46px;
+    color: white;
+    text-decoration:underline;
+}
+
+header h2{
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+}
+
+ol{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ol li{
+    width: 50%;
+    text-align: center;
+    list-style: none;
+    padding: 10px 10px;
+    border: 2px solid wheat;
+    color: white;
+    border-radius: 10px;
+    margin: 10px
+}
+
+ol li img{
+    max-width: 100%;
+}
+
+button{
+    max-width: 30%;
+    background-color: mediumaquamarine;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 10px; 
+}
+
+button:hover{
+    cursor:pointer;
 }
