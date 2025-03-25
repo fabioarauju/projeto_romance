@@ -45,6 +45,7 @@ ol{
 
 ol li{
     font-size: 4vmin;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     min-width: 30%;
