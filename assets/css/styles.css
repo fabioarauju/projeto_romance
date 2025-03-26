@@ -6,10 +6,21 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
-    background: rgb(255,255,255);
+body {
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(69,155,252,1) 20%, rgba(255,0,0,1) 100%);
+    background-size: 300% 100%;
+    animation: moveGradient 5s linear infinite alternate;
 }
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
 .container{
     width: 80%;
     display: flex;
