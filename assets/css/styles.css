@@ -8,23 +8,23 @@
 
 body {
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(69,155,252,1) 20%, rgba(255,0,0,1) 100%);
-    background-size: 300% 100%;
-    animation: moveGradient 5s linear infinite alternate;
+    background-size: 200% 200%;
+    animation: rotateBackground 10s ease-in-out infinite;
+    background-repeat: no-repeat;
 }
 
-@keyframes moveGradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
+/* Animação de fundo */
+@keyframes rotateBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .container{
-    width: 80%;
+    width: 90%;
     display: flex;
     align-items: center;
+    overflow: hidden;
     flex-direction: column;
     margin: 0 auto;
 }
